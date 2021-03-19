@@ -1,5 +1,3 @@
-#include <ESP8266WiFi.h>
-#include <ESP8266HTTPClient.h>
 
 #define PIR D5  
 int PIRstate = 0;
