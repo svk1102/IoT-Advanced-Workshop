@@ -8,7 +8,7 @@ int i;
 void setup () {
   //Setting up Serial Monitor and WiFi
   Serial.begin(9600);
-  WiFi.begin("Amogh 2.4GHz","MSFconsole");
+  WiFi.begin("Your wifi name","Password");
   
   while(WiFi.status() != WL_CONNECTED)
   {
@@ -48,7 +48,7 @@ void loop()
     if (WiFi.status() == WL_CONNECTED)        //Check WiFi connection status
     {
       HTTPClient http;                        //Declare an object of class HTTPClient
-      http.begin("http://maker.ifttt.com/trigger/Motion_detection/with/key/piY55iYKcs2_PjuSQV1s13TcVOdaQ3-XExMQv_V9R8j");  //Specify request destination
+      http.begin("Your Ifttt link");  //Specify request destination
       http.GET();                             //Send GET request
       http.end();                             //Close the connection
       Serial.println();
