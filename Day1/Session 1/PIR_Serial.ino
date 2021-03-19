@@ -7,11 +7,11 @@ int i;
 void setup () {
   Serial.begin(9600);
 
-  pinMode(PIR, INPUT); //digitalWrite(PIR, LOW);
+  pinMode(PIR, INPUT); 
   pinMode(LED_BUILTIN, OUTPUT);
 
   Serial.println("PIR is Stabilizing");
-  while(i != 30){
+  while(i != 30){                   // Wait for 30 Seconds
     i=i+1;
     Serial.print(".");
     delay(1000);
